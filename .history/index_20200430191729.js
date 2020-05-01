@@ -76,9 +76,9 @@ function temperatureCtoF( celsius ) {
 */
 function temperatureInF( temp, type ) {
   if (type === 'C') {
-    return `${temperatureCtoF(temp)}F`
+    return Math.round(temp*9/5 + 32)
   } else if ( type === 'F') {
-    return `${temp}F`
+    return Math.round(temp*5/9 - 32)
   }
 }
 

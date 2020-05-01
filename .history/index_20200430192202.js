@@ -78,7 +78,7 @@ function temperatureInF( temp, type ) {
   if (type === 'C') {
     return `${temperatureCtoF(temp)}F`
   } else if ( type === 'F') {
-    return `${temp}F`
+    return `${temp} F`
   }
 }
 
