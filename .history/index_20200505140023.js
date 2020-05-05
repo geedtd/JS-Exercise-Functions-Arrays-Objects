@@ -267,7 +267,7 @@ function getLastCarInfo(carInfo) {
 function getModelYears(carInfo) {
   let modelYears = [];
   for (let i = 0; i < carInfo.length; i += 1) {
-    modelYears.push(carInfo[i].car_year);
+    carInfo[i].car_year.push(modelYears);
   }
   return modelYears;
 }
