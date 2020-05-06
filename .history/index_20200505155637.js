@@ -338,7 +338,7 @@ function getOlderCars(inv, maxYear) {
 function getGermanCars(inv) {
   let germanCars = [];
   for (let i = 0; i < inv.length; i += 1) {
-    if (inv[i].car_make === 'Audi' || inv[i].car_make === 'BMW' || inv[i].car_make === 'Mercedes-Benz' || inv[i].car_make === 'Volkswagen') {
+    if (inv[i].car_make === 'Audi' || 'BMW' || 'Mercedes-Benz' || 'Volkswagen') {
       germanCars.push(inv[i])
     } else {
       continue
@@ -360,21 +360,9 @@ function getGermanCars(inv) {
  *         (1) causes the odometer in the object to be increased by the distance,
  *         (2) returns the updated value of the `odometer`.
 */
-function carMaker(odo) {
-  let car = {
-    odometer: odo,
-    drive : function(distance) {
-       this.odometer += distance; 
-       return this.odometer;
-    }
-  }
-  return car
+function carMaker(/* code here */) {
+  /* code here */
 }
-
-
-
-
-
 
 /// ////// END OF CHALLENGE /////////
 /// ////// END OF CHALLENGE /////////

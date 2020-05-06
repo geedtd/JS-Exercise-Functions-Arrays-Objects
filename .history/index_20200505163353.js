@@ -364,8 +364,7 @@ function carMaker(odo) {
   let car = {
     odometer: odo,
     drive : function(distance) {
-       this.odometer += distance; 
-       return this.odometer;
+      return this.odometer + distance;
     }
   }
   return car
